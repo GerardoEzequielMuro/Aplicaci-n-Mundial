@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --border--radius: 0.313rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff !important;
+  height: 4rem;
+  z-index: 100000;
+  box-shadow: 0 0.25rem 0.25rem 0 #00000040;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+  height: auto;
+}
+
+.nav-item {
+  margin-right: 0.938rem;
+  font-weight: 500;
+  font-size: 1.063rem;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler:target {
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#logo-guayerd {
+  margin: 18px 18.93px 17.2px 21px;
+}
+
+#logo-scaloneta {
+  margin-top: 1.313rem;
+  margin-bottom: 1.563rem;
+  margin-right: 5.563rem;
+}
+
+.button {
+  width: 6.688rem;
+  height: 2.063rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 16.44px;
+  margin-top: 1rem;
+  margin-bottom: 0.938rem;
+  margin-right: 1.438rem;
+  background-color: #374785;
+  color: #fff;
+  border-color: #24305e;
+  border: 0;
+  border-radius: var(--border--radius);
+  box-shadow: 0 2px 4px 0 #00000040;
+}
+
+#vector-g {
+  display: none;
+  margin-right: 0.951rem;
+  margin-left: 1rem;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2.938rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 span {
+  color: #119dd8;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+section{
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #EBEBEB;
+  border-radius: var(--border--radius);
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card h5 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: start;
+}
+.card p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.card .img-wrapper {
+  height: 15.625rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .img-wrapper span{
+  position: absolute;
+  color: #fff;
+  top: 9px;
+  right: 14px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 550px){
+  section{
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  #logo-guayerd {
+    display: none;
+  }
+  #vector-g {
+    display: initial;
+  }
+  .navbar-toggler {
+    margin-right: 18px;
+  }
+  .div-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13px;
+  }
+  .button {
+    width: 95%;
+    margin-top: 0;
+    height: 38px;
+  }
+  .nav-link {
+    padding-bottom: 0 !important;
+    margin-left: 18px;
+  }
+  .nav-item {
+    margin-bottom: 0;
+  }
+ 
+}
+
+@media screen and (max-width: 780px) {
+  #logo-guayerd {
+    display: none;
+  }
+  #vector-g {
+    display: initial;
+  }
+  .navbar-toggler {
+    margin-right: 18px;
+  }
+  .div-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13px;
+  }
+  .button {
+    width: 95%;
+    margin-top: 0;
+    height: 38px;
+  }
+  .nav-link {
+    padding-bottom: 0 !important;
+    margin-left: 18px;
+  }
+  .nav-item {
+    margin-bottom: 0;
+  }
+  select {
+    margin-top: -270px;
+  }
+}

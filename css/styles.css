@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --border--radius: 0.313rem;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+#login {
+  background: url(/media/index/Bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#img-copa {
+  display: none;
+}
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 22.75rem;
+  height: 18.813rem;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0px 6px 4px 0px #00000040;
+  border-radius: 5px;
+}
+
+form h1 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 28.18px;
+}
+
+form input {
+  box-shadow: 0px 0px 3px 0px #0000002e inset;
+}
+
+form label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+}
+
+
+form button[type="submit"] {
+  width: 100%;
+  height: 2.375rem;
+  background-color: #374785;
+  color: #fff;
+  border-color: #24305e;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  border: 0px;
+  border-radius: var(--border--radius);
+}
+
+footer {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+footer img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 500px) {
+  #img-copa {
+    display: block;
+    margin-bottom: 65px;
+  }
+  #login {
+    background: transparent;
+  }
+  main {
+    flex-direction: column;
+  }
+  form {
+    box-shadow: none;
+  }
+
+  footer {
+    position: relative;
+    justify-content: center;
+  }
+  footer img {
+    position: initial;
+  }
+}
